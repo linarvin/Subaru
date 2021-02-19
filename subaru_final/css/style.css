@@ -1,0 +1,260 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font: inherit;
+}
+img {
+    vertical-align: top;
+}
+.responsive--img {
+    width: 100%;
+    height: auto;
+}
+html {
+    font-size: 100%;
+}
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+nav.primary {
+    display: none;
+}
+nav.primary ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+nav.primary ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+}
+.header--icon button img {
+    height: 1.5rem;
+} 
+.header--icon button {
+    border: 0;
+    background-color: white;
+} 
+main {
+    background-color: black;
+}
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.cta {
+    
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    background-color: #0099FF;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cars {
+    background-color: white;
+}
+.car--list {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.car {
+    width: 50%;
+    
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.car--text h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+.car--text h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.price {
+    margin-top: 1rem;
+    color: #575757;
+}
+.tools {
+    background-color: #0099FF;
+}
+.tools h2 {
+    text-align: center;
+    color: white;
+}
+.tool--row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tool {
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.tool img{
+    width: 99.25px;
+    height: 99.25px;
+    opacity: 0.3;
+    padding-bottom: 1rem;
+}
+.tool h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: black;
+}
+nav.secondary{
+    display: none;
+}
+
+.media {
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+.socialMedia::after {
+    display: block;
+    margin-top: 1rem;
+    content: "Copyright 2020 Subaru of America, Inc."
+}
+.media h4 {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+
+@media all and (min-width: 1000px){
+    .container {
+        width: 1000px;
+        margin: 0px auto;
+    }
+
+    nav.primary {
+        display: block;
+    }
+    .menuBtn {
+        display: none;
+    }
+    .showcase {
+        position: relative;
+    }
+    .showcase--text {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        left: 2rem;
+        bottom: 2rem;
+        display: flex;
+    }
+    .cta {
+        display: flex;
+        align-items: center;
+    }
+    .car--list {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .cars h2 {
+        text-align: center;
+    }
+    .car {
+        width: 33.33%;
+    }
+    .tool {
+        width: 25%;
+    }
+    nav.secondary {
+        display: block;
+        border-bottom: 1px solid #575757;
+        margin-bottom: 1rem;
+    }
+    nav.secondary ul  {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav.secondary ul li {
+        width: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    nav.secondary ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        margin-top: 1rem;
+    }    
+    nav.secondary ul ul {
+        display: block;
+    }
+    nav.secondary ul ul li{
+        width: 100%;
+    
+    }
+    nav.secondary ul ul li a{
+        font-weight: 400;
+    
+    }
+    .media {
+        
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .media h4 {
+        display: block;
+    }
+    .socialMedia::after {
+        display: none;
+    }
+
+}
